@@ -1,14 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on Andy's personal yard</title><link>https://andyt9527.github.io/posts/</link><description>Recent content in Posts on Andy's personal yard</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 13 Sep 2022 13:29:36 +0800</lastBuildDate><atom:link href="https://andyt9527.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Hugo和GitHub Pages搭建个人博客</title><link>https://andyt9527.github.io/posts/my_first_post/</link><pubDate>Tue, 13 Sep 2022 13:29:36 +0800</pubDate><guid>https://andyt9527.github.io/posts/my_first_post/</guid><description>使用Hugo和GitHub Pages搭建个人博客 Hugo的安装和使用 Hugo的安装 初步使用Hugo的话，只需要跟随官网的文档过一遍Quick Start就可以了解基本的安装、使用方法了。 这里根据我自己在Ubuntu 20.04部署经历进行简单的说明。
-sudo apt-get install hugo
-等待安装完成之后，可以使用hugo version命令来验证。
-建立新站点 接下来从终端进入到你想要放置博客站点原始内容的目录下使用下面的命令来建立站点。
-hugo new site myblog
-该命令会在当前目录下新建一个名为myblog的文件夹。你所有的站点文件都会在这个文件夹下面存放。
-添加主题 与其他的站点工具不同，Hugo没有默认的主题，需要先添加一个主题才能新建文章。Hugo的官网上有很多的主题可选。选定一个喜欢的主题之后，需要将其下载到myblog文件夹中。在主题说明的页面中点击&amp;quot;download&amp;quot;的按钮，会进入到对应的GitHub页面中。有很多种方式可以将主题文件下载，并放置到myblog/themes/&amp;lt;YOURTHEME&amp;gt;文件夹中（&amp;lt;YOURTHEME&amp;gt;是主题的名称，可以在该主题的GitHub仓库的页面看到）。 在这里为了使用git对站点进行管理，实现在不同的设备上方便的对站点进行维护，我们使用git的submodule功能。
-cd myblog git init git submodule add https://github.com/budparr/gohugo-theme-&amp;lt;YOURTHEME&amp;gt;.git themes/&amp;lt;YOURTHEME&amp;gt; 接下来，我们需要在配置文件中指名站点所使用的主题。打开config.toml直接编辑或者使用echo 'theme = &amp;quot;&amp;lt;YOURTHEME&amp;gt;&amp;quot;' &amp;gt;&amp;gt; config.toml命令。 配置文件中还有其他的可配置内容，这些根据实际主题配置修改即可。
-新建文章 新建文章可以使用如下的命令，或者直接在content/&amp;lt;CATEGORY&amp;gt;/&amp;lt;FILE&amp;gt;.&amp;lt;FORMAT&amp;gt;里面手动创建。
-hugo new posts/my-first-post.md
-在这里建议使用Hugo的new命令创建，因为根据主题不同，使用new命令创建的文件会包含简单的模版框架。例如：
---- title: my-first-post date: 2020-06-13T19:45:22+08:00 lastmod: 2020-06-13T19:45:22+08:00 author: Author cover: /post/xxx-cover.jpg categories: [&amp;#34;技术&amp;#34;] tags: [&amp;#34;Hugo&amp;#34;, &amp;#34;GitHub&amp;#34;] draft: true --- 具体的配置方式和参数的意义，请查看对应的主题说明。
-文章中添加图片 Hugo的配置文件和文章中引用图片都是从static作为根目录的。也就是说上面例子中的/post/xxx-cover.jpg实际是在static文件夹中。
-. └── static └── post └── xxx-cover.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>📚文章 on Andy&#39;s personal yard</title>
+    <link>https://andyt9527.github.io/posts/</link>
+    <description>Recent content in 📚文章 on Andy&#39;s personal yard</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Sep 2022 13:29:36 +0800</lastBuildDate><atom:link href="https://andyt9527.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
