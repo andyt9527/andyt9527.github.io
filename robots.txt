@@ -1,3 +1,1 @@
 User-agent: *
-Disallow:
-Sitemap: https://andyt9527.github.io/sitemap.xml
